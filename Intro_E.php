@@ -1,0 +1,64 @@
+<?php
+//CONEXION CON LA BASE DE DATOS
+include("Conexion.php"); 
+
+if(isset($_POST['Enviar']))
+{
+$Organismo=$_POST['Organismo'];
+$Fecha_I=$_POST['Fecha_I'];
+$Fecha_E=$_POST['Fecha_E'];
+$Cargo=$_POST['Cargo'];
+$Antecedentes_S=$_POST['Antecedentes_S'];
+$CedulaID=$_POST['CedulaID'];
+$status=$_POST['status'];
+
+
+$insert = "INSERT INTO inventario.Experiencia_L (`Organismo`, `Fecha_I`, `Fecha_E`, `Cargo`, `Antecedentes_S`, `CedulaID`, `status`) VALUES ('$Organismo','$Fecha_I','$Fecha_E','$Cargo','$Antecedentes_S', '$CedulaID', '$status')"; 
+
+$resul= $conex->query($insert);
+
+ if($resul)
+ {
+ 	//Redireccionando
+    echo "<script type='text/javascript'>
+	window.location.href='inf_lab.php';
+</script>";
+ }
+ }
+
+
+ if(isset($_POST['otro']))
+{
+$Organismo=$_POST['Organismo'];
+$Fecha_I=$_POST['Fecha_I'];
+$Fecha_E=$_POST['Fecha_E'];
+$Cargo=$_POST['Cargo'];
+$Antecedentes_S=$_POST['Antecedentes_S'];
+$CedulaID=$_POST['CedulaID'];
+
+$insert = "INSERT INTO inventario.Experiencia_L (`Organismo`, `Fecha_I`, `Fecha_E`, `Cargo`, `Antecedentes_S`, `CedulaID`) VALUES ('$Organismo','$Fecha_I','$Fecha_E','$Cargo','$Antecedentes_S', 'CedulaID')"; 
+
+$resul= $conex->query($insert);
+
+ if($resul)
+ {
+ 	//Redireccionando
+    echo "<script type='text/javascript'>
+	window.location.href='inf_expe.php';
+</script>";
+ }
+ }
+
+
+ if(isset($_POST['No']))
+{
+
+ 	//Redireccionando
+    echo "<script type='text/javascript'>
+	window.location.href='inf_lab.php';
+</script>";
+
+ }
+
+
+?>

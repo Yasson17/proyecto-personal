@@ -1,0 +1,155 @@
+body{
+	margin:0;
+	padding:0;
+	background:url(../imagen/espacio_exterior.jpg) no-repeat center top;
+	background-size:cover;
+	font-family:sans-serif;
+	height:100vh;
+}
+
+
+.conte{
+
+	width:320px;
+	height:420px;
+	background:url(../imagen/15-A.jpg) no-repeat center top;
+	background-size:cover;
+	top:50%;
+	left:32%;
+	position:absolute;
+	transform:translate(-50%, -50%);
+	box-sizing:border-box;
+	padding:70px 30px;
+	border-top-left-radius:5%;
+	border-bottom-left-radius:5%;
+} 
+
+
+
+
+.login{
+	width:320px;
+	height:420px;
+	background:#120050;
+	color:#ffffff;
+	top:50%;
+	left:63%;
+	position:absolute;
+	transform:translate(-50%, -50%);
+	box-sizing:border-box;
+	padding:70px 30px;
+	border-top-right-radius:5%;
+	border-bottom-right-radius:5%;
+	
+}
+
+.login .avatar{
+    height:100px;
+	width:100px;
+	border-radius:50%;
+	position:absolute;
+	top:-50px;
+	left:calc(50% - 50px);
+}
+
+.login h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:22px;
+}
+
+
+.login input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.login input[type="text"],
+.login input[type="password"]{
+	border:none;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:rgb(255, 255, 255);
+	font-size:17px;
+}
+
+.login input[type="text"]:hover,
+.login input[type="password"]:hover{
+    margin-top: 4px;
+	border:none;
+	border-bottom:1px solid rgb(251, 255, 0);
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:13px;
+}
+
+.login input[type="submit"]{
+	border:none;
+	outline:none;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	height:40px;
+	background:#2d41f8;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+    
+}
+
+
+.login input[type="submit"]:hover{
+	text-decoration:none;
+    color: #000;
+	background:#b40000;
+	cursor: pointer;
+}
+
+
+
+.login a {
+
+	color:rgb(255, 255, 255);
+	text-decoration:none;
+	font-size:14px;
+	margin-bottom:20px;
+
+
+}
+
+.login .registro{
+
+    font-size: small;
+    margin-right: 4px;
+}
+
+.login .registro .efecto:hover{
+
+	font-size: 18px;
+	text-decoration:underline;
+
+
+}
+
+.login .contenedor {
+
+	height:20px;
+    margin-top: 5px;
+	text-align:center;
+	border-bottom:2px;
+
+}
+
+.login .contenedor:active{
+	
+	text-decoration: underline;
+	font-size:18px;
+
+}
+
+
+
